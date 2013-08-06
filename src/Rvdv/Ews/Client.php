@@ -80,7 +80,6 @@ class Client extends \SoapClient
         $this->guzzleClient = new GuzzleClient('https://'.$server.'/EWS/Exchange.asmx', array(
             'request.options' => array(
                 'auth' => array($username, $password, 'Any'),
-                'proxy' => 'http://localhost:8888',
                 'verify' => false,
             ),
             'curl.options' => array(
