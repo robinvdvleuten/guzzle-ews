@@ -1,0 +1,19 @@
+{
+    "name": "rvdv/ews-client",
+    "description": "Client for connecting to an EWS server",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robin van der Vleuten",
+            "email": "robinvdvleuten@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "ext-soap": "*",
+        "guzzle/guzzle": "3.7.*"
+    },
+    "autoload": {
+        "psr-0": { "Rvdv\\Ews": "src/" }
+    }
+}
