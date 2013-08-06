@@ -100,6 +100,7 @@ class Client extends \SoapClient
         );
 
         $response = $this->guzzleClient->post($location, $headers, $request)->send();
-        var_dump($response->getBody(true));
+
+        return $response->getBody(true);
     }
 }
